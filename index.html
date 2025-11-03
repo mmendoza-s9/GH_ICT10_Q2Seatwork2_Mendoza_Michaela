@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- py-script cdn -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <!-- bootstrap cdn -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Student Grade Calculator</title>
+</head>
+<body>
+
+<form>
+    <h1>Student Grade Calculator</h1>
+    <label for="name">First Name:</label><br>
+    <input type="text" id="fname">
+    <br><br>
+
+    <label for="age">Last Name:</label><br>
+    <input type="text" id="lname">
+    <br><br>
+</form>
+
+<form>
+    <h3>Enter Your Grades</h3>
+    <label for="name">English</label>
+    <input type="number" id="english"><br>
+
+    <label for="name">Math</label>
+    <input type="number" id="math"><br>
+
+    <label for="name">Social Studies</label>
+    <input type="number" id="ss"><br>
+
+    <label for="name">Music</label>
+    <input type="number" id="music"><br>
+
+    <label for="name">PE</label>
+    <input type="number" id="pe"><br>
+
+    <label for="name">VE</label>
+    <input type="number" id="ve"><br>
+</form>
+
+<br><br>
+<input type="button" py-click="student_gwa" value="Calculate GWA">
+
+<div id="output"></div>
+<py-script src="main.py"></py-script>
+</body>
+</html>
