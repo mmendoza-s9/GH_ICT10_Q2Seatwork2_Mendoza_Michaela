@@ -8,6 +8,12 @@ total_units = 16
 
 def student_gwa(e):
     document.getElementById("output").innerHTML = " " 
+    gwa = int(document.getElementById("english").value)
+    gwa = int(document.getElementById("math").value)
+    gwa = int(document.getElementById("ss").value)
+    gwa = int(document.getElementById("music").value)
+    gwa = int(document.getElementById("pe").value)
+    gwa = int(document.getElementById("ve").value)
 
     eng_grade = float(document.getElementById('english').value)
     eng_result = eng_grade * 5
@@ -34,3 +40,8 @@ def student_gwa(e):
 
     display(f'Name: {first_name} {last_name}', target='output')
     display(f'Your GWA is: {sum}', target='output')
+
+    if gwa > 74:  # if statement to check if the student passed or failed
+      display(f'PASSED', target="output")
+    else:  # else statementif the student failed
+      display(f'FAILED', target="output")
