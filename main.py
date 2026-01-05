@@ -31,7 +31,7 @@ def student_gwa(e):
     pe_result = pe_grade * 1
 
     ve_grade = float(document.getElementById('ve').value)
-    ve_result = ve_grade * 1
+    ve_result = ve_grade * 1  
 
     sum = ((eng_result + math_result + ss_result + music_result + pe_result + ve_result) // total_units)
 
